@@ -38,6 +38,32 @@
 		.s1 { text-shadow: 4px 4px 5px black; }
 		.s2 { text-shadow: 2px 2px 2px black; }
 		.s3 { text-shadow: 1px 1px 1px black; }
+		/* 기본 네비게이션 배경 및 텍스트 색상 설정 */
+        .bg-2a2a2a {
+            background-color: #2a2a2a !important;
+        }
+
+        /* 기본 링크 색상 설정 */
+        .bg-2a2a2a .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out; /* 부드러운 색상 전환 효과 */
+        }
+
+        /* 마우스를 올렸을 때 색상이 더 밝아지도록 설정 */
+        .bg-2a2a2a .nav-link:hover {
+            color: #90ee90 !important; /* 연한 회색 */
+        }
+
+		.border-bottom {
+	    color: red !important;
+	    text-decoration: none; /* 기본 밑줄 제거 */
+	    transition: color 0.3s ease-in-out; /* 부드러운 색상 전환 */
+		}
+
+		.border-bottom:hover {
+		    color: darkred !important; /* 마우스 오버 시 진한 빨간색 */
+		}
+
 	</style>
 	<meta charset="utf-8">
 	<title>와썹</title>
@@ -71,7 +97,7 @@
 	<link href="https://borinet-dev.github.io/css/css/style3.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: #2a2a2a;">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
@@ -79,7 +105,7 @@
     <!-- Spinner End -->
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <nav class="navbar navbar-expand-lg bg-2a2a2a navbar-light sticky-top p-0">
         <a href="https://l2wassub.org" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="https://raw.githubusercontent.com/borinet-dev/img/main/logo_wassub.png" style="max-width: auto; height: auto;">
         </a>
@@ -108,7 +134,7 @@
 
     <!-- Start -->
 <div id="viewer" class="white viewer_style rd_nav_blk">
-	<div id="bd_7139_123793" class="bd clear   hover_effect" data-default_style="viewer" data-bdfilestype="" data-bdnavside="N" style="max-width:px">
+	<div style="background-color: #2a2a2a; color: white; id="bd_7139_123793" class="bd clear   hover_effect" data-default_style="viewer" data-bdfilestype="" data-bdnavside="N" style="max-width:px">
 압축파일을 다운로드 받기 전에 반드시 모든 백신을 종료하고, 윈도우 디펜더 또한 종료 또는 폴더제외를 해두어야 합니다.<br>
 그 이유는 윈도우 디펜더의 경우 압축된 파일의 내부파일도 제거를 해버리는 경우가 발생됩니다.<br><br>
 <strong><font size=3px color=be0000>반드시 제외폴더를 지정해 둔 후 다운로드 해주시기 바랍니다.</font></strong><br><br>
